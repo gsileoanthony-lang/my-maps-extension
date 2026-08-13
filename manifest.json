@@ -1,9 +1,15 @@
 {
   "manifest_version": 3,
-  "name": "GitHub Maps Lead Scraper",
+  "name": "Maps Lead Scraper",
   "version": "1.0",
-  "permissions": ["activeTab", "scripting"],
-  "host_permissions": [""],
+  "description": "Google Maps se data scrape karke CSV file mein save karta hai.",
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
   "background": {
     "service_worker": "background.js"
   },
